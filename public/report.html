@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Criar Relatório</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/report.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Criar Relatório</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="report.html" aria-current="page">Criar Relatório</a>
+      <a href="search.html">Buscar Relatórios</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="report-form" class="form-card" aria-describedby="form-desc">
+      <p id="form-desc">Preencha os campos para criar um relatório. Será enviado por e-mail e salvo no banco.</p>
+
+      <label for="title">Título</label>
+      <input id="title" name="title" type="text" required maxlength="120" />
+
+      <label for="client">Cliente / Local</label>
+      <input id="client" name="client" type="text" required maxlength="120" />
+
+      <label for="summary">Resumo (breve)</label>
+      <textarea id="summary" name="summary" rows="3" required></textarea>
+
+      <label for="details">Detalhes (estrutura recomendada: problema, ação, resultado)</label>
+      <textarea id="details" name="details" rows="8" required></textarea>
+
+      <label for="email">Enviar cópia para (email)</label>
+      <input id="email" name="email" type="email" required />
+
+      <div class="form-actions">
+        <button type="submit">Enviar & Salvar</button>
+        <button type="reset">Limpar</button>
+      </div>
+
+      <div id="form-msg" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer>
+    <small>© 2025 Ferramenta de Relatórios</small>
+  </footer>
+
+  <script src="js/report.js"></script>
+</body>
+</html>

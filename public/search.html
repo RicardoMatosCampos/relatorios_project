@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buscar Relatórios</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/search.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Buscar Relatórios</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="report.html">Criar Relatório</a>
+      <a href="search.html" aria-current="page">Buscar Relatórios</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-card">
+      <label for="q">Pesquisar (título, cliente, conteúdo)</label>
+      <input id="q" type="search" placeholder="Digite termo e pressione Enter" />
+    </section>
+
+    <section>
+      <h2>Resultados</h2>
+      <div id="results" class="card-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Ferramenta de Relatórios</small>
+  </footer>
+
+  <script src="js/search.js"></script>
+</body>
+</html>

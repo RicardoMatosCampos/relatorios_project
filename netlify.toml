@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  command = "" # não precisa buildar nada, é site estático
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

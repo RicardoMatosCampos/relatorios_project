@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - Relatórios</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Ferramenta de Relatórios</h1>
+    <nav>
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="report.html">Criar Relatório</a>
+      <a href="search.html">Buscar Relatórios</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro">
+      <h2 id="intro">Visão geral</h2>
+      <p>Use o formulário para criar e enviar relatórios. Todos ficam salvos no banco e podem ser consultados.</p>
+    </section>
+
+    <section aria-labelledby="recent">
+      <h2 id="recent">Relatórios recentes</h2>
+      <div id="recent-list" class="card-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Ferramenta de Relatórios — Uso interno</small>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
